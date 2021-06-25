@@ -1,6 +1,4 @@
 #Reto4
-
-
 def DescontarMedicamento(m,s,ts,d):
     if s == 1 and ts == 1:
         m[0][0] = int(m[0][0]) - d
@@ -141,8 +139,19 @@ for i in range(int(Entrada1[0])):
         promedio2 = suma / iterador
         print("{:.2f}".format(promedio2))
 
+menor = 1000
+pos = 0
+for i in range(int(Entrada1[0])):
+    lista3 = V3[i][0]
+    if len(lista3) > 1:
+        lista3.remove(0)
+    
+    if min(lista3) < menor:
+        menor = min(lista3)
+        pos = i + 1
 
-
+print(f"{pos} {menor}")
+ 
 
 
 
