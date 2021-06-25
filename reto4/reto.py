@@ -140,7 +140,7 @@ for i in range(int(Entrada1[0])):
         print("{:.2f}".format(promedio2))
 
 menor = 1000
-pos = 0
+pos1 = 0
 for i in range(int(Entrada1[0])):
     lista3 = V3[i][0]
     if len(lista3) > 1:
@@ -148,19 +148,27 @@ for i in range(int(Entrada1[0])):
     
     if min(lista3) < menor:
         menor = min(lista3)
-        pos = i + 1
+        pos1 = i + 1
+    
+mayor = 0
+pos2 = 0
+for i in range(int(Entrada1[0])):
+    lista4 = V3[i][0]
+    if max(lista4) > mayor:
+        mayor = max(lista4)
+        pos2 = i + 1
 
-print(f"{pos} {menor}")
+print(f"{pos1} {menor}")
+print(f"{pos2} {mayor}")
  
 
 
 
-
-
+"""
 print(Entrada2)
 print(V3)
 print(matrizConteo)
-
+"""
         
 
 
